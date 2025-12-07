@@ -32,6 +32,18 @@
       margin-right: auto;
     }
 
+  header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 0.4rem;
+  }
+
+  header nav a:hover {
+    text-decoration: underline;
+    color: #f0faff; /* slight glow on hover */
+  }
+    
     /* pill navigation buttons in header */
     .nav-buttons {
       margin-top: 1.8rem;
@@ -39,25 +51,6 @@
       justify-content: center;
       gap: 1rem;
       flex-wrap: wrap;
-    }
-
-    .nav-btn {
-      padding: 0.5rem 1.2rem;
-      border-radius: 999px;
-      background: rgba(255, 255, 255, 0.9);
-      color: #2563eb;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 600;
-      border: 1px solid rgba(255, 255, 255, 0.85);
-      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
-      display: inline-block;
-    }
-
-    .nav-btn:hover {
-      background: #ffffff;
-      transform: translateY(-2px);
-      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.18);
     }
 
     main {
