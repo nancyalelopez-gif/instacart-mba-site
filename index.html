@@ -12,55 +12,68 @@
       color: #222;
       background-color: #fafafa;
     }
+
     header {
       background: linear-gradient(135deg, #2563eb, #10b981);
       color: white;
       padding: 4rem 1.5rem 3rem;
       text-align: center;
     }
+
     header h1 {
-      margin: 0 0 0.5rem;
-      font-size: 2.2rem;
+      margin: 0 0 0.75rem;
+      font-size: 2.4rem;
     }
+
     header p {
       margin: 0.25rem 0;
       max-width: 650px;
       margin-left: auto;
       margin-right: auto;
     }
-    .btn-row {
-      margin-top: 1.5rem;
+
+    /* pill navigation buttons in header */
+    .nav-buttons {
+      margin-top: 1.8rem;
       display: flex;
       justify-content: center;
-      gap: 0.75rem;
+      gap: 1rem;
       flex-wrap: wrap;
     }
-    .btn {
-      padding: 0.6rem 1.2rem;
+
+    .nav-btn {
+      padding: 0.5rem 1.2rem;
       border-radius: 999px;
-      border: 1px solid rgba(255,255,255,0.7);
-      color: white;
+      background: rgba(255, 255, 255, 0.9);
+      color: #2563eb;
       text-decoration: none;
       font-size: 0.9rem;
-      backdrop-filter: blur(8px);
+      font-weight: 600;
+      border: 1px solid rgba(255, 255, 255, 0.85);
+      transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+      display: inline-block;
     }
-    .btn.secondary {
-      background: white;
-      color: #2563eb;
-      border-color: white;
+
+    .nav-btn:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(15, 23, 42, 0.18);
     }
+
     main {
       max-width: 1000px;
       margin: 0 auto;
       padding: 2rem 1.5rem 3rem;
     }
+
     section {
       margin-bottom: 2.5rem;
       background: white;
       border-radius: 12px;
       padding: 1.75rem;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.05);
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05);
     }
+
     section h2 {
       margin-top: 0;
       font-size: 1.3rem;
@@ -68,109 +81,73 @@
       padding-bottom: 0.4rem;
       margin-bottom: 0.9rem;
     }
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.75rem;
-    }
-.tag {
-  font-size: 0.75rem;
-  padding: 0.25rem 0.75rem;
-  border-radius: 999px;
-  background: #eff6ff;      /* light blue background */
-  color: #2563eb;           /* readable blue text */
-  text-decoration: none;    /* remove underline */
-  display: inline-block;
-  font-weight: 500;
-}
-
-.tag:hover {
-  background: #dbeafe;      /* slightly darker on hover */
-}
-
-    .nav-buttons {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-}
-
-.nav-btn {
-  padding: 0.45rem 1rem;
-  font-size: 0.85rem;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.9);
-  color: #2563eb;
-  text-decoration: none;
-  font-weight: 600;
-  border: 1px solid rgba(255,255,255,0.8);
-  transition: background 0.25s, transform 0.1s;
-}
-
-.nav-btn:hover {
-  background: white;
-  transform: translateY(-2px);
-}
 
     ul {
       padding-left: 1.1rem;
     }
+
     .grid {
       display: grid;
       gap: 1rem;
     }
+
     @media (min-width: 768px) {
       .grid-2 {
         grid-template-columns: 1fr 1fr;
       }
     }
+
     footer {
       text-align: center;
       font-size: 0.8rem;
       color: #6b7280;
       padding: 1.5rem 1rem 2rem;
     }
+
     a {
       color: #2563eb;
     }
+
+    img.responsive-img {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin: 1rem auto 0;
+    }
   </style>
 </head>
-<body>
 
+<body>
   <header>
     <h1>Market Basket Analysis of Instacart Orders</h1>
-    <p>Exploring customer purchasing behavior using exploratory analysis, association rule mining,
-      and customer segmentation on the Instacart Online Grocery dataset.</p>
+    <p>
+      Exploring customer purchasing behavior using exploratory analysis, association rule mining,
+      and customer segmentation on the Instacart Online Grocery dataset.
+    </p>
     <p>by Darien Diaz and Nancy Lopez</p>
-<nav class="nav-buttons">
-  <a href="index.html" class="nav-btn">Home</a>
-  <a href="python.html" class="nav-btn">Python Code</a>
-  <a href="apriori.html" class="nav-btn">Apriori / MBA</a>
-  <a href="clustering.html" class="nav-btn">Clustering</a>
-</nav>
 
+    <div class="nav-buttons">
+      <a href="index.html" class="nav-btn">Home</a>
+      <a href="python.html" class="nav-btn">Python Code</a>
+      <a href="apriori.html" class="nav-btn">Apriori / Market Basket Analysis</a>
+      <a href="clustering.html" class="nav-btn">Clustering</a>
+      <a href="dataset.html" class="nav-btn">Instacart Dataset</a>
+      <!-- remove or change dataset.html if you use a different page name -->
+    </div>
   </header>
-    
+
   <main>
     <section>
       <h2>Project Overview</h2>
       <p>
-The rapid growth of e-commerce and digital grocery platforms has generated an unprecedented volume of transactional data, creating new opportunities to understand customer purchasing behavior at scale. Such insights are essential for optimizing operations, enhancing recommendation systems, and improving the overall shopping experience in an increasingly competitive retail environment. In this study, the Instacart’s online grocery dataset is analyzed using a combination of data mining techniques, including exploratory analysis, association rule mining, and clustering. These complementary approaches allow capturing behavioral patterns, uncovering relationships among co-purchased items, and identifying distinct customer segments. Preprocessing steps were applied to ensure data quality and support the analytical workflow. The findings highlight how different analytical perspectives contribute to a deeper understanding of customer behavior, offering practical implications for recommendation systems, store layout optimization, and cross-selling strategies.
+        This project analyzes millions of Instacart orders to understand how customers shop for groceries
+        online. Using the publicly available Instacart dataset, the analysis focuses on ordering patterns,
+        products frequently purchased together, reorder behavior, and customer segmentation.
       </p>
-<div class="tags">
-  <a href="python.html" class="tag">Python</a>
-  <a href="apriori.html" class="tag">Market Basket Analysis</a>
-  <a href="apriori.html" class="tag">Apriori</a>
-  <a href="clustering.html" class="tag">K-Means Clustering</a>
-  <a href="index.html" class="tag">Instacart Dataset</a>
-</div>
-
     </section>
 
     <section>
-      <h2>Data & Methodology</h2>
+      <h2>Data &amp; Methodology</h2>
       <div class="grid grid-2">
         <div>
           <h3 style="margin-top:0;">Data</h3>
@@ -215,20 +192,14 @@ The rapid growth of e-commerce and digital grocery platforms has generated an un
     </section>
 
     <section>
-      <h2>Visualizations</h2>
+      <h2>Example Visualization</h2>
       <p>
-        Below are examples of the visual outputs generated in the analysis, including temporal ordering patterns,
-        frequent itemset tables, and network graphs of associations.
+        The analysis produces several visual artifacts, including temporal order patterns, frequent itemset
+        summaries, and network graphs of aisle-level associations.
       </p>
-      <ul>
-        <li>Orders by day of week and hour of day.</li>
-        <li>Top frequent itemsets at product, aisle, and department levels.</li>
-        <li>Network graphs highlighting strong association rules.</li>
-        <li>Cluster profiles summarizing segment-level behavior.</li>
-      </ul>
-      <!-- You can embed images like this:
-      <img src="images/aisle_network_graph.png" alt="Aisle network graph" style="max-width:100%;border-radius:8px;" />
-      -->
+      <p>Below is an example network graph of top aisle associations:</p>
+      <img src="Aisle Network.png" alt="Aisle Network Graph" class="responsive-img">
+      <!-- make sure the image file name and path match your repo -->
     </section>
 
     <section>
@@ -239,19 +210,10 @@ The rapid growth of e-commerce and digital grocery platforms has generated an un
         studies in Data Science and AI.
       </p>
       <p>
-        Connect on <a href="YOUR_LINKEDIN_LINK_HERE" target="_blank">LinkedIn</a>.
+        Connect on
+        <a href="YOUR_LINKEDIN_LINK_HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
       </p>
     </section>
-
-<section>
-  <h2>Visualizations</h2>
-  <p>Here is one of the key visualizations from the analysis:</p>
-  <img src="Aisle Network.png" 
-       alt="Aisle Network Graph" 
-       style="max-width:100%; border-radius:8px; margin-top:1rem;">
-</section>
-
-        
   </main>
 
   <footer>
