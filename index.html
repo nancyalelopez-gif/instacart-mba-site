@@ -74,12 +74,21 @@
       gap: 0.5rem;
       margin-top: 0.75rem;
     }
-    .tag {
-      font-size: 0.75rem;
-      padding: 0.2rem 0.7rem;
-      border-radius: 999px;
-      background: #4169E1;
-      }
+.tag {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: #eff6ff;      /* light blue background */
+  color: #2563eb;           /* readable blue text */
+  text-decoration: none;    /* remove underline */
+  display: inline-block;
+  font-weight: 500;
+}
+
+.tag:hover {
+  background: #dbeafe;      /* slightly darker on hover */
+}
+
     ul {
       padding-left: 1.1rem;
     }
@@ -105,7 +114,6 @@
 </head>
 <body>
 
-<body>
   <header>
     <h1>Market Basket Analysis of Instacart Orders</h1>
     <p>Exploring customer purchasing behavior using exploratory analysis, association rule mining,
@@ -128,13 +136,14 @@
         online. Using the publicly available Instacart dataset, the analysis focuses on ordering patterns,
         products frequently purchased together, reorder behavior, and customer segmentation.
       </p>
-      <div class="tags">
-        <span class="tag">Python</span>
-        <span class="tag">Market Basket Analysis</span>
-        <span class="tag">Apriori</span>
-        <span class="tag">K-Means Clustering</span>
-        <span class="tag">Instacart Dataset</span>
-      </div>
+<div class="tags">
+  <a href="python.html" class="tag">Python</a>
+  <a href="apriori.html" class="tag">Market Basket Analysis</a>
+  <a href="apriori.html" class="tag">Apriori</a>
+  <a href="clustering.html" class="tag">K-Means Clustering</a>
+  <a href="index.html" class="tag">Instacart Dataset</a>
+</div>
+
     </section>
 
     <section>
