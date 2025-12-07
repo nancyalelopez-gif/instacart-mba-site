@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Market Basket Analysis of Instacart Orders</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+    }
+    header {
+      background: linear-gradient(135deg, #2563eb, #10b981);
+      color: white;
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0 0 0.5rem;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 0.25rem 0;
+      max-width: 650px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .btn-row {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+    .btn {
+      padding: 0.6rem 1.2rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.7);
+      color: white;
+      text-decoration: none;
+      font-size: 0.9rem;
+      backdrop-filter: blur(8px);
+    }
+    .btn.secondary {
+      background: white;
+      color: #2563eb;
+      border-color: white;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 3rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+      background: white;
+      border-radius: 12px;
+      padding: 1.75rem;
+      box-shadow: 0 8px 24px rgba(15,23,42,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 0.4rem;
+      margin-bottom: 0.9rem;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .tag {
+      font-size: 0.75rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+    ul {
+      padding-left: 1.1rem;
+    }
+    .grid {
+      display: grid;
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+      padding: 1.5rem 1rem 2rem;
+    }
+    a {
+      color: #2563eb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Market Basket Analysis of Instacart Orders</h1>
+    <p>
+      Exploring customer purchasing behavior using exploratory analysis, association rule mining,
+      and customer segmentation on the Instacart Online Grocery dataset.
+    </p>
+    <p>by Nancy Lopez</p>
+    <div class="btn-row">
+      <a class="btn secondary" href="YOUR_PDF_LINK_HERE" target="_blank">Read the Report (PDF)</a>
+      <a class="btn" href="YOUR_GITHUB_LINK_HERE" target="_blank">View Code on GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>
+        This project analyzes millions of Instacart orders to understand how customers shop for groceries
+        online. Using the publicly available Instacart dataset, the analysis focuses on ordering patterns,
+        products frequently purchased together, reorder behavior, and customer segmentation.
+      </p>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">Market Basket Analysis</span>
+        <span class="tag">Apriori</span>
+        <span class="tag">K-Means Clustering</span>
+        <span class="tag">Instacart Dataset</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Data & Methodology</h2>
+      <div class="grid grid-2">
+        <div>
+          <h3 style="margin-top:0;">Data</h3>
+          <ul>
+            <li>Instacart Online Grocery Shopping Dataset (2017).</li>
+            <li>Millions of orders across thousands of products.</li>
+            <li>Orders, order products, products, aisles, and departments tables.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 style="margin-top:0;">Techniques</h3>
+          <ul>
+            <li>Exploratory Data Analysis (EDA).</li>
+            <li>Association rule mining with Apriori.</li>
+            <li>K-Means clustering for customer segments.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Key Findings</h2>
+      <ul>
+        <li>
+          <strong>Temporal patterns:</strong> Orders peak on Sundays and Mondays between 9:00 a.m. and 5:00 p.m.,
+          indicating weekly stock-up behavior. A clear 30-day cycle also appears in order volume.
+        </li>
+        <li>
+          <strong>Frequent itemsets:</strong> Strong co-purchasing patterns such as
+          <em>[Bag of Organic Bananas, Organic Hass Avocado]</em>, and Produce + Dairy Eggs
+          as core basket drivers.
+        </li>
+        <li>
+          <strong>Reorder behavior:</strong> Dairy and Fresh Produce are the most frequently reordered categories.
+          Loyal customers (16+ orders) are 2.4× more likely to reorder than new customers.
+        </li>
+        <li>
+          <strong>Customer segments:</strong> Distinct groups such as Infrequent Buyers and Family-Oriented
+          shoppers reveal different future value and engagement profiles.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Visualizations</h2>
+      <p>
+        Below are examples of the visual outputs generated in the analysis, including temporal ordering patterns,
+        frequent itemset tables, and network graphs of associations.
+      </p>
+      <ul>
+        <li>Orders by day of week and hour of day.</li>
+        <li>Top frequent itemsets at product, aisle, and department levels.</li>
+        <li>Network graphs highlighting strong association rules.</li>
+        <li>Cluster profiles summarizing segment-level behavior.</li>
+      </ul>
+      <!-- You can embed images like this:
+      <img src="images/aisle_network_graph.png" alt="Aisle network graph" style="max-width:100%;border-radius:8px;" />
+      -->
+    </section>
+
+    <section>
+      <h2>About the Author</h2>
+      <p>
+        Nancy Lopez is a data science and analytics professional with experience in customer analytics,
+        telecommunications, and applied machine learning. This project was completed as part of graduate
+        studies in Data Science and AI.
+      </p>
+      <p>
+        Connect on <a href="YOUR_LINKEDIN_LINK_HERE" target="_blank">LinkedIn</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Nancy Lopez · Market Basket Analysis of Instacart Orders
+  </footer>
+</body>
+</html>
