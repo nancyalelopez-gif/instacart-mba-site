@@ -89,6 +89,31 @@
   background: #dbeafe;      /* slightly darker on hover */
 }
 
+    .nav-buttons {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.9);
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.8);
+  transition: background 0.25s, transform 0.1s;
+}
+
+.nav-btn:hover {
+  background: white;
+  transform: translateY(-2px);
+}
+
     ul {
       padding-left: 1.1rem;
     }
@@ -119,22 +144,20 @@
     <p>Exploring customer purchasing behavior using exploratory analysis, association rule mining,
       and customer segmentation on the Instacart Online Grocery dataset.</p>
     <p>by Darien Diaz and Nancy Lopez</p>
-<div class="tags">
-  <a href="python.html" class="tag">Python</a>
-  <a href="apriori.html" class="tag">Market Basket Analysis</a>
-  <a href="apriori.html" class="tag">Apriori</a>
-  <a href="clustering.html" class="tag">K-Means Clustering</a>
-  <a href="index.html" class="tag">Instacart Dataset</a>
-</div>
+<nav class="nav-buttons">
+  <a href="index.html" class="nav-btn">Home</a>
+  <a href="python.html" class="nav-btn">Python Code</a>
+  <a href="apriori.html" class="nav-btn">Apriori / MBA</a>
+  <a href="clustering.html" class="nav-btn">Clustering</a>
+</nav>
+
   </header>
     
   <main>
     <section>
       <h2>Project Overview</h2>
       <p>
-        This project analyzes millions of Instacart orders to understand how customers shop for groceries
-        online. Using the publicly available Instacart dataset, the analysis focuses on ordering patterns,
-        products frequently purchased together, reorder behavior, and customer segmentation.
+The rapid growth of e-commerce and digital grocery platforms has generated an unprecedented volume of transactional data, creating new opportunities to understand customer purchasing behavior at scale. Such insights are essential for optimizing operations, enhancing recommendation systems, and improving the overall shopping experience in an increasingly competitive retail environment. In this study, the Instacart’s online grocery dataset is analyzed using a combination of data mining techniques, including exploratory analysis, association rule mining, and clustering. These complementary approaches allow capturing behavioral patterns, uncovering relationships among co-purchased items, and identifying distinct customer segments. Preprocessing steps were applied to ensure data quality and support the analytical workflow. The findings highlight how different analytical perspectives contribute to a deeper understanding of customer behavior, offering practical implications for recommendation systems, store layout optimization, and cross-selling strategies.
       </p>
 <div class="tags">
   <a href="python.html" class="tag">Python</a>
