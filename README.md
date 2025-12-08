@@ -20,6 +20,7 @@ different analytical perspectives contribute to a deeper understanding
 of customer behavior, offering practical implications for
 recommendation systems, store layout optimization, and crossselling
 strategies.
+
 Index Terms—market basket analysis, Instacart, association
 rules, Apriori, consumer behavior
 
@@ -33,6 +34,6 @@ rules, Apriori, consumer behavior
 [Kaggle link](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset)
 
 ### Code
-[File](https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb)
+[Python File](https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb)
 
 
