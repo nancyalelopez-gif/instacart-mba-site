@@ -2,6 +2,14 @@
 <html lang="en">
 
   <style>
+    img.responsive-img1 {
+      max-width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin: 1rem auto 0;
+    }
+
+      <style>
     img.responsive-img {
       max-width: 80%;
       border-radius: 8px;
@@ -30,11 +38,11 @@
   <section>
       <h2>Overview</h2>
       <p>
-The customer segmentation process begins with preparing a user–department matrix based on each shopper’s reorder behavior. This matrix captures how often users repurchase items across different departments, providing a behavioral profile for each customer.
+The process starts with preparing a user–department matrix based on each customer’s reorder behavior. This matrix captures how often users repurchase items across different departments, providing a behavioral profile for each customer.
 Next, K-Means clustering is applied to group users with similar purchasing patterns. Dimensionality reduction with PCA helps visualize these clusters and their centroids, making the segment structure easier to interpret.
 Finally, each segment is analyzed to identify shared characteristics and uncover meaningful shopper types—such as Fresh & Dairy Lovers, Pantry Stock-Uppers, or Snack & Beverage Fans. These insights help inform targeted marketing, personalized recommendations, and strategic decision-making.
       </p>
-      <img src="Segmentation.png" alt="Segmentation" class="responsive-img">
+      <img src="Segmentation.png" alt="Segmentation" class="responsive-img1">
   </section>
 
     <section>
@@ -66,6 +74,43 @@ learning to move from raw user data to actionable, distinct
 customer segments.
       </p>
     <img src="PCA.png" alt="PCA" class="responsive-img"> 
+    </section>
+
+    <section>
+      <h2>Customer Segmentation Based on Reorder Rate</h2>
+      <p>
+        The customer segmentation process, driven by reorder patterns, identified five
+distinct customer segments, each presenting unique traits and
+opportunities for targeted marketing.
+        <li>
+          <strong>Segment 1:</strong>strong> the Core Grocery Essentials, one of the
+          largest group with about 56K customers; ideal to target
+          them with strategies like category cross-selling so they
+          can expand the items purchase footprint.
+        </li>
+        <li>
+          <strong>Segment 2:</strong> characterized as Infrequent Buyers with
+          low reorder behavior, is the largest group with 67K
+          users, offering the primary opportunity for retention and
+          activation campaigns.
+        </li>
+        <li>
+          <strong>Segment 3: </strong>strong> the Bulk/Stock-up Shoppers; this group
+          exhibits a high reorder behavior despite being the smallest
+          segment at 1.8K users, making them ideal for loyalty and
+          subscription offers.
+        </li>
+        <li>
+          <strong>Segment 4:</strong>strong> the Family-oriented customers with about
+          6.7K users; they exibit high reorder behavior on deparments like Babies, Dairy Eggs, and Produce; this segment
+          is ideal to be targeted with family bundles specials.
+        </li>
+        <li>
+          <strong>Segment 5:</strong>strong> the Premium loyalists with about 26K users
+          in this group, demonstrates High and broad reorder behavior and is suited for VIP rewards and early access.
+        </li>
+      </p>
+          <img src="Segments.png" alt="Segments" class="responsive-img1"> 
     </section>
 
   </main>
