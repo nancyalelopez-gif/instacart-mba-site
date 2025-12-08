@@ -23,7 +23,8 @@ strategies.
 Index Terms—market basket analysis, Instacart, association
 rules, Apriori, consumer behavior
 
-### Website [link](https://nancyalelopez-gif.github.io/instacart-mba-site/index.html)
+### Website 
+[Visit website link](https://nancyalelopez-gif.github.io/instacart-mba-site/index.html)
  
 ### Slides
 [View Presentation Slides](https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA_Presentation.pdf)
@@ -32,6 +33,6 @@ rules, Apriori, consumer behavior
 [Kaggle link](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset)
 
 ### Code
-[File] (https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb)
+[File](https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb)
 
 
