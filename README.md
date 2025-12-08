@@ -20,7 +20,7 @@ different analytical perspectives contribute to a deeper understanding
 of customer behavior, offering practical implications for
 recommendation systems, store layout optimization, and crossselling
 strategies.
-
+ 
 Index Terms—market basket analysis, Instacart, association
 rules, Apriori, consumer behavior
 
