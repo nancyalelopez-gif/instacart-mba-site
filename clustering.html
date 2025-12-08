@@ -21,6 +21,16 @@
   <section>
       <h2>Overview</h2>
       <p>
+The customer segmentation process begins with preparing a user–department matrix based on each shopper’s reorder behavior. This matrix captures how often users repurchase items across different departments, providing a behavioral profile for each customer.
+Next, K-Means clustering is applied to group users with similar purchasing patterns. Dimensionality reduction with PCA helps visualize these clusters and their centroids, making the segment structure easier to interpret.
+Finally, each segment is analyzed to identify shared characteristics and uncover meaningful shopper types—such as Fresh & Dairy Lovers, Pantry Stock-Uppers, or Snack & Beverage Fans. These insights help inform targeted marketing, personalized recommendations, and strategic decision-making.
+      </p>
+      <img src="Segmentation.png" alt="Segmentation" class="responsive-img">
+  </section>
+
+    <section>
+      <h2>Elbow Method</h2>
+      <p>
 K-means: The customer segmentation process began
 with a data preparation stage, which involved calculating the
 reorder rate for each user and constructing a user–department
@@ -28,14 +38,6 @@ matrix in which the rows represent users, the columns represent departments, and
 reorder rate. This matrix was then used as input for the
 clustering stage, where the K-Means algorithm was applied to
 group users into distinct clusters. Based on the elbow method a value of K = 5 was selected.
-      </p>
-
-      <h2>Elbow Method</h2>
-      <p>
- Online grocery orders
-peak on Saturdays and Sundays, especially between 9:00 a.m. and 5:00 p.m.,
-suggesting that many customers use the weekend to prepare
-for the week. Thursdays display the lowest order volume.
       </p>
       <img src="Elbow.png" alt="Elbow" class="responsive-img">
       <!-- make sure the image file name and path match your repo -->
