@@ -17,27 +17,38 @@
 <body>
   <main>
 
-   <section>
-    <h2>Association Rule Mining (Apriori Algorithm)</h2>
-    <p>
+<section>
+  <h2>Association Rule Mining (Apriori Algorithm)</h2>
+  <p>
     Association Rule Mining (Apriori Algorithm) is used to identify predictable and hidden relationships between items
     purchased together within a single Instacart transaction. The analysis is driven by three core metrics that are used to
-    evaluate the strength and importance of each rule. 
-    • Support: Measures how frequently an item combination appears in 
-    the entire dataset. 
-    • Confidence: Indicates the reliability of the rule (e.g. the probability of buying item Y given that item X has
+    evaluate the strength and importance of each rule:
+  </p>
+  <ul>
+    <li>
+      **Support:** Measures how frequently an item combination appears in
+      the entire dataset.
+    </li>
+    <li>
+      **Confidence:** Indicates the reliability of the rule (e.g., the probability of buying item Y given that item X has
       already been purchased).
-    • Lift: Quantifies the strength of the association. A Lift value greater than 1.0 means the two items are more likely
+    </li>
+    <li>
+      **Lift:** Quantifies the strength of the association. A Lift value greater than **1.0** means the two items are more likely
       to be bought together than if they were independent, confirming a positive relationship.
-     </p>
-    </section>
+    </li>
+  </ul>
+</section>
+
+    
     <section>
-      <h2>Time-Based Ordering Patterns</h2>
+      <h2>Products Frequently Purchased Together</h2>
       <p>
-      Online grocery orders peak on Saturdays and Sundays, especially between 9:00 a.m. and 5:00 p.m.,
-      suggesting that many customers use the weekend to prepare for the week. Thursdays display the lowest order volume.
+      Table II shows the top frequent itemsets for products frequently purchased together with parameters set for minimum support of 0.5%
+      and minimum confidence of 30%. A total of 76 frequent itemsets with a maximum length of 2 were identified. The
+      most frequent associations occur within produce, especially fruits.
       </p>
-      <img src="Days_of_week.png" alt="Days of Week" class="responsive-img">
+      <!-- <img src="Days_of_week.png" alt="Days of Week" class="responsive-img">
       <!-- make sure the image file name and path match your repo -->
     </section>
     
