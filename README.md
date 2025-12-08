@@ -23,24 +23,16 @@ strategies.
 Index Terms—market basket analysis, Instacart, association
 rules, Apriori, consumer behavior
 
-    <section>
-      <h2>Reference Documents</h2>
-      <ul>
-        <li>
-          Website 
-          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/index.html" target="_blank" rel="noopener noreferrer">link</a>.
-        </li>
-        <li>
-          Slides
-          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA_Presentation.pdf" target="_blank" rel="noopener noreferrer">link</a>.
-        </li>
-        <li>
-          Dataset
-          <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" rel="noopener noreferrer">link</a>.
-        </li>
-        <li>
-          Python Code
-          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb" target="_blank" rel="noopener noreferrer">link</a>.
-        </li>
-      </ul>
-    </section>
+### Website
+[Visit Webpage](https://nancyalelopez-gif.github.io/instacart-mba-site/index.html)
+ 
+### Slides
+[View Presentation Slides](https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA_Presentation.pdf)
+ 
+### Dataset
+[Kaggle link](https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset)
+
+### Code
+[File] (https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb)
+
+
