@@ -1,2 +1,46 @@
 # instacart-mba-site
 Market Basket Analysis – Instacart project website
+
+Abstract
+The rapid growth of e-commerce and digital grocery
+platforms has generated an unprecedented volume of transactional
+data, creating new opportunities to understand customer
+purchasing behavior at scale. Such insights are essential for
+optimizing operations, enhancing recommendation systems, and
+improving the overall shopping experience in an increasingly
+competitive retail environment. In this study, the Instacart’s
+online grocery dataset is analyzed using a combination of data
+mining techniques, including exploratory analysis, association
+rule mining, and clustering. These complementary approaches
+allow capturing behavioral patterns, uncovering relationships
+among co-purchased items, and identifying distinct customer
+segments. Preprocessing steps were applied to ensure data quality
+and support the analytical workflow. The findings highlight how
+different analytical perspectives contribute to a deeper understanding
+of customer behavior, offering practical implications for
+recommendation systems, store layout optimization, and crossselling
+strategies.
+Index Terms—market basket analysis, Instacart, association
+rules, Apriori, consumer behavior
+
+    <section>
+      <h2>Reference Documents</h2>
+      <ul>
+        <li>
+          Website 
+          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/index.html" target="_blank" rel="noopener noreferrer">link</a>.
+        </li>
+        <li>
+          Slides
+          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA_Presentation.pdf" target="_blank" rel="noopener noreferrer">link</a>.
+        </li>
+        <li>
+          Dataset
+          <a href="https://www.kaggle.com/datasets/yasserh/instacart-online-grocery-basket-analysis-dataset" target="_blank" rel="noopener noreferrer">link</a>.
+        </li>
+        <li>
+          Python Code
+          <a href="https://nancyalelopez-gif.github.io/instacart-mba-site/Instacart_MBA.ipynb" target="_blank" rel="noopener noreferrer">link</a>.
+        </li>
+      </ul>
+    </section>
